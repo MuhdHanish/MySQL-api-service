@@ -1,0 +1,39 @@
+{
+  "name": "mysql-api-service",
+  "version": "0.1.0",
+  "description": "This is simple backend service used to learn crud operations in mysql",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhdHanish/MySQL-crud-api.git"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "typescript",
+    "clean-architecture",
+    "curd",
+    "api",
+    "bakend",
+    "servieces",
+    "learning"
+  ],
+  "author": "MuhdHanish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MuhdHanish/MySQL-crud-api/issues"
+  },
+  "homepage": "https://github.com/MuhdHanish/MySQL-crud-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.2",
+    "typescript": "^5.2.2"
+  }
+}
