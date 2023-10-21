@@ -7,9 +7,10 @@ import cors from "cors";
 import { config } from "dotenv";
 config();
 
-
 // creat express application
 const app = express();
+
+import excQuery from "./src/framework/database/config";
 
 // cors setting
 const allowedOrigins = ["http://localhost:5173","http://localhost:3000"];
@@ -28,10 +29,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 // user route
-app.use('/');
+// app.use('/');
 
 // database connecting & app listen
 const port = process.env.PORT || 8000;
+excQuery()
+  .then(() => app.listen(port, (): void => console.log(`Server running on ${port}... 🎉`)))
+  .catch((err) => console.log(err));
 
-// app listening
- app.listen(port, (): void => console.log(`Server running...`));
